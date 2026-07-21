@@ -1,0 +1,26 @@
+cat > .gitignore <<'EOF'
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+
+# macOS
+.DS_Store
+
+# Generated data
+data/processed/*
+!data/processed/.gitkeep
+
+# Models and vector databases
+models/
+vector_store/
+*.faiss
+*.index
+EOF
