@@ -1,26 +1,31 @@
-cat > .gitignore <<'EOF'
 # Python
 __pycache__/
 *.py[cod]
 .venv/
 venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Environment
+# Environment and secrets
 .env
+.env.local
 
 # macOS
 .DS_Store
 
-# Generated data
+# Generated legacy processed data
 data/processed/*
 !data/processed/.gitkeep
 
-# Models and vector databases
+# Local model and vector database artifacts
 models/
 vector_store/
 *.faiss
 *.index
-EOF
+
+# Local temporary files
+*.tmp

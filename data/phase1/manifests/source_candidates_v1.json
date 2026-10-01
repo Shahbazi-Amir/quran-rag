@@ -1,0 +1,285 @@
+{
+  "schema_version": "qrag_source_candidate_manifest_v1",
+  "phase": "qrag-phase1",
+  "manifest_status": "CANDIDATE_ONLY_NOT_ACTIVE_CORPUS",
+  "candidates": [
+    {
+      "source_id": "quran:uthmani:legacy-repo-v1",
+      "source_family": "quran",
+      "epistemic_layer": "quran_canonical_text",
+      "title": "Quran Arabic Uthmani legacy repository file",
+      "creator_or_scholar": null,
+      "tradition_scope": "canonical_quran",
+      "repository_path": "data/raw/quran_arabic_uthmani.txt",
+      "acquisition_status": "present_in_repository",
+      "rights_status": "evidence_required",
+      "acceptance_status": "candidate",
+      "required_checks": [
+        "source_provenance",
+        "edition_or_provider_identity",
+        "verse_count_and_numbering",
+        "text_integrity",
+        "hash_freeze",
+        "rights_or_allowed_use"
+      ]
+    },
+    {
+      "source_id": "translation:fa:fooladvand:legacy-repo-v1",
+      "source_family": "translation",
+      "epistemic_layer": "translation",
+      "title": "Persian Quran translation — Fooladvand",
+      "creator_or_scholar": "Mohammad Mehdi Fooladvand",
+      "tradition_scope": "translation",
+      "repository_path": "data/raw/quran_fa_fooladvand.txt",
+      "acquisition_status": "present_in_repository",
+      "rights_status": "evidence_required",
+      "acceptance_status": "candidate",
+      "required_checks": [
+        "source_provenance",
+        "edition_identity",
+        "verse_alignment",
+        "text_integrity",
+        "hash_freeze",
+        "rights_or_allowed_use"
+      ]
+    },
+    {
+      "source_id": "translation:fa:ansarian:legacy-repo-v1",
+      "source_family": "translation",
+      "epistemic_layer": "translation",
+      "title": "Persian Quran translation — Ansarian",
+      "creator_or_scholar": "Hossein Ansarian",
+      "tradition_scope": "translation",
+      "repository_path": "data/raw/quran_fa_ansarian.txt",
+      "acquisition_status": "present_in_repository",
+      "rights_status": "evidence_required",
+      "acceptance_status": "candidate",
+      "required_checks": [
+        "source_provenance",
+        "edition_identity",
+        "verse_alignment",
+        "text_integrity",
+        "hash_freeze",
+        "rights_or_allowed_use"
+      ]
+    },
+    {
+      "source_id": "tafsir:al-mizan:candidate",
+      "source_family": "tafsir",
+      "epistemic_layer": "tafsir",
+      "title": "Al-Mizan fi Tafsir al-Quran",
+      "creator_or_scholar": "Allameh Tabatabaei",
+      "tradition_scope": "shia_priority",
+      "repository_path": null,
+      "acquisition_status": "not_acquired",
+      "rights_status": "evidence_required",
+      "acceptance_status": "candidate_external",
+      "required_checks": [
+        "authoritative_digital_source",
+        "edition_identity",
+        "volume_structure",
+        "verse_alignment",
+        "stable_locator",
+        "rights_or_allowed_use"
+      ]
+    },
+    {
+      "source_id": "tafsir:tasnim:candidate",
+      "source_family": "tafsir",
+      "epistemic_layer": "tafsir",
+      "title": "Tafsir Tasnim",
+      "creator_or_scholar": "Abdollah Javadi Amoli",
+      "tradition_scope": "shia_priority",
+      "repository_path": null,
+      "acquisition_status": "not_acquired",
+      "rights_status": "evidence_required",
+      "acceptance_status": "candidate_external",
+      "required_checks": [
+        "authoritative_digital_source",
+        "edition_identity",
+        "volume_structure",
+        "verse_alignment",
+        "stable_locator",
+        "rights_or_allowed_use"
+      ]
+    },
+    {
+      "source_id": "tafsir:nemuneh:candidate",
+      "source_family": "tafsir",
+      "epistemic_layer": "tafsir",
+      "title": "Tafsir Nemuneh",
+      "creator_or_scholar": "Naser Makarem Shirazi and collaborators",
+      "tradition_scope": "shia_priority",
+      "repository_path": null,
+      "acquisition_status": "not_acquired",
+      "rights_status": "evidence_required",
+      "acceptance_status": "candidate_external",
+      "required_checks": [
+        "authoritative_digital_source",
+        "edition_identity",
+        "volume_structure",
+        "verse_alignment",
+        "stable_locator",
+        "rights_or_allowed_use"
+      ]
+    },
+    {
+      "source_id": "tafsir:nur-al-thaqalayn:candidate",
+      "source_family": "tafsir",
+      "epistemic_layer": "tafsir",
+      "title": "Nur al-Thaqalayn",
+      "creator_or_scholar": "Abd Ali ibn Jum'a al-Huwayzi",
+      "tradition_scope": "shia_riwayi_candidate",
+      "repository_path": null,
+      "acquisition_status": "not_acquired",
+      "rights_status": "evidence_required",
+      "acceptance_status": "candidate_external",
+      "required_checks": [
+        "authoritative_digital_source",
+        "edition_identity",
+        "riwayi_structure",
+        "verse_alignment",
+        "stable_locator",
+        "rights_or_allowed_use"
+      ]
+    },
+    {
+      "source_id": "tafsir:al-burhan:candidate",
+      "source_family": "tafsir",
+      "epistemic_layer": "tafsir",
+      "title": "Al-Burhan fi Tafsir al-Quran",
+      "creator_or_scholar": "Hashim al-Bahrani",
+      "tradition_scope": "shia_riwayi_candidate",
+      "repository_path": null,
+      "acquisition_status": "not_acquired",
+      "rights_status": "evidence_required",
+      "acceptance_status": "candidate_external",
+      "required_checks": [
+        "authoritative_digital_source",
+        "edition_identity",
+        "riwayi_structure",
+        "verse_alignment",
+        "stable_locator",
+        "rights_or_allowed_use"
+      ]
+    },
+    {
+      "source_id": "hadith:al-kafi:candidate",
+      "source_family": "hadith",
+      "epistemic_layer": "hadith",
+      "title": "Al-Kafi",
+      "creator_or_scholar": "Muhammad ibn Ya'qub al-Kulayni",
+      "tradition_scope": "shia_priority",
+      "repository_path": null,
+      "acquisition_status": "not_acquired",
+      "rights_status": "evidence_required",
+      "acceptance_status": "candidate_external",
+      "required_checks": [
+        "authoritative_digital_source",
+        "edition_identity",
+        "book_chapter_hadith_locator",
+        "isnad_preservation_if_available",
+        "grading_metadata_source_if_available",
+        "rights_or_allowed_use"
+      ]
+    },
+    {
+      "source_id": "hadith:man-la-yahduruhu-al-faqih:candidate",
+      "source_family": "hadith",
+      "epistemic_layer": "hadith",
+      "title": "Man La Yahduruhu al-Faqih",
+      "creator_or_scholar": "Ibn Babawayh al-Saduq",
+      "tradition_scope": "shia_priority",
+      "repository_path": null,
+      "acquisition_status": "not_acquired",
+      "rights_status": "evidence_required",
+      "acceptance_status": "candidate_external",
+      "required_checks": [
+        "authoritative_digital_source",
+        "edition_identity",
+        "book_chapter_hadith_locator",
+        "isnad_preservation_if_available",
+        "grading_metadata_source_if_available",
+        "rights_or_allowed_use"
+      ]
+    },
+    {
+      "source_id": "hadith:tahdhib-al-ahkam:candidate",
+      "source_family": "hadith",
+      "epistemic_layer": "hadith",
+      "title": "Tahdhib al-Ahkam",
+      "creator_or_scholar": "Shaykh al-Tusi",
+      "tradition_scope": "shia_priority",
+      "repository_path": null,
+      "acquisition_status": "not_acquired",
+      "rights_status": "evidence_required",
+      "acceptance_status": "candidate_external",
+      "required_checks": [
+        "authoritative_digital_source",
+        "edition_identity",
+        "book_chapter_hadith_locator",
+        "isnad_preservation_if_available",
+        "grading_metadata_source_if_available",
+        "rights_or_allowed_use"
+      ]
+    },
+    {
+      "source_id": "hadith:al-istibsar:candidate",
+      "source_family": "hadith",
+      "epistemic_layer": "hadith",
+      "title": "Al-Istibsar",
+      "creator_or_scholar": "Shaykh al-Tusi",
+      "tradition_scope": "shia_priority",
+      "repository_path": null,
+      "acquisition_status": "not_acquired",
+      "rights_status": "evidence_required",
+      "acceptance_status": "candidate_external",
+      "required_checks": [
+        "authoritative_digital_source",
+        "edition_identity",
+        "book_chapter_hadith_locator",
+        "isnad_preservation_if_available",
+        "grading_metadata_source_if_available",
+        "rights_or_allowed_use"
+      ]
+    },
+    {
+      "source_id": "hadith:nahj-al-balagha:candidate",
+      "source_family": "hadith",
+      "epistemic_layer": "hadith",
+      "title": "Nahj al-Balagha",
+      "creator_or_scholar": "Compiled by al-Sharif al-Radi",
+      "tradition_scope": "shia_priority",
+      "repository_path": null,
+      "acquisition_status": "not_acquired",
+      "rights_status": "evidence_required",
+      "acceptance_status": "candidate_external",
+      "required_checks": [
+        "authoritative_digital_source",
+        "edition_identity",
+        "sermon_letter_saying_locator",
+        "source_metadata",
+        "rights_or_allowed_use"
+      ]
+    },
+    {
+      "source_id": "hadith:sahifa-sajjadiya:candidate",
+      "source_family": "hadith",
+      "epistemic_layer": "hadith",
+      "title": "Al-Sahifa al-Sajjadiyya",
+      "creator_or_scholar": "Attributed prayers of Imam Ali ibn al-Husayn",
+      "tradition_scope": "shia_priority",
+      "repository_path": null,
+      "acquisition_status": "not_acquired",
+      "rights_status": "evidence_required",
+      "acceptance_status": "candidate_external",
+      "required_checks": [
+        "authoritative_digital_source",
+        "edition_identity",
+        "supplication_locator",
+        "source_metadata",
+        "rights_or_allowed_use"
+      ]
+    }
+  ]
+}

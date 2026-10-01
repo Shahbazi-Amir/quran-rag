@@ -1,0 +1,13 @@
+# Phase 1 dependency declaration.
+# Exact versions will be frozen after NB00 records the real local environment.
+numpy
+requests
+sentence-transformers
+torch
+python-dotenv
+openai
+streamlit
+nbformat
+nbclient
+ipykernel
+jsonschema

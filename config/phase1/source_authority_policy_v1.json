@@ -1,0 +1,153 @@
+{
+  "schema_version": "qrag_source_authority_policy_v1",
+  "policy_id": "qrag:phase1:source-authority:v1",
+  "phase": "qrag-phase1",
+  "tradition_scope": {
+    "tafsir_and_hadith_priority": "shia_priority",
+    "note": "Priority guides source inventory only and does not auto-accept any source."
+  },
+  "epistemic_layers": [
+    {
+      "id": "quran_canonical_text",
+      "label_fa": "متن قرآن",
+      "source_families": [
+        "quran"
+      ],
+      "runtime_rule": "May be presented as Quran text only after canonical acceptance."
+    },
+    {
+      "id": "translation",
+      "label_fa": "ترجمه قرآن",
+      "source_families": [
+        "translation"
+      ],
+      "runtime_rule": "Must always display translator/source identity and must not be presented as the Arabic Quran text."
+    },
+    {
+      "id": "tafsir",
+      "label_fa": "تفسیر",
+      "source_families": [
+        "tafsir"
+      ],
+      "runtime_rule": "Interpretive statements must be attributed to the named work/scholar and must not be rewritten as direct Quran wording."
+    },
+    {
+      "id": "hadith",
+      "label_fa": "حدیث و روایت",
+      "source_families": [
+        "hadith"
+      ],
+      "runtime_rule": "Narrative evidence must preserve collection and locator. Grading may only be displayed when explicitly sourced."
+    },
+    {
+      "id": "derived_claim",
+      "label_fa": "ادعای استخراج‌شده",
+      "source_families": [
+        "derived_claim"
+      ],
+      "runtime_rule": "A derived claim is never final evidence; it must resolve back to accepted source evidence."
+    },
+    {
+      "id": "generated_answer",
+      "label_fa": "پاسخ تولیدشده",
+      "source_families": [
+        "generated_answer"
+      ],
+      "runtime_rule": "Generated text is output, not source evidence."
+    }
+  ],
+  "answer_modes": {
+    "quran_only": {
+      "allowed_layers": [
+        "quran_canonical_text"
+      ],
+      "require_direct_quran_evidence": true
+    },
+    "quran_with_translation": {
+      "allowed_layers": [
+        "quran_canonical_text",
+        "translation"
+      ],
+      "require_direct_quran_evidence": true
+    },
+    "tafsir_assisted": {
+      "allowed_layers": [
+        "quran_canonical_text",
+        "translation",
+        "tafsir"
+      ],
+      "require_layer_labels": true
+    },
+    "hadith_assisted": {
+      "allowed_layers": [
+        "quran_canonical_text",
+        "translation",
+        "hadith"
+      ],
+      "require_layer_labels": true
+    },
+    "scholarly_synthesis": {
+      "allowed_layers": [
+        "quran_canonical_text",
+        "translation",
+        "tafsir",
+        "hadith"
+      ],
+      "require_layer_labels": true,
+      "preserve_disagreement": true
+    }
+  },
+  "rights_policy": {
+    "accepted_statuses_for_active_corpus": [
+      "verified_allowed"
+    ],
+    "unknown_or_unverified_action": "quarantine",
+    "repository_presence_is_rights_evidence": false
+  },
+  "citation_policy": {
+    "quran": [
+      "surah",
+      "ayah"
+    ],
+    "translation": [
+      "translation_id",
+      "surah",
+      "ayah"
+    ],
+    "tafsir": [
+      "work_id",
+      "edition_id",
+      "volume_or_part",
+      "section_or_verse_scope",
+      "stable_locator"
+    ],
+    "hadith": [
+      "collection_id",
+      "edition_id",
+      "book_or_section",
+      "hadith_id_or_stable_locator"
+    ],
+    "derived_claim": [
+      "claim_id",
+      "evidence_ids"
+    ]
+  },
+  "conflict_relation_types": [
+    "AGREES_WITH",
+    "COMPLEMENTS",
+    "PARTIAL_OVERLAP",
+    "DIFFERS_FROM",
+    "CONFLICTS_WITH",
+    "UNRESOLVED"
+  ],
+  "hard_rules": [
+    "Translation must never be labeled as the Arabic Quran text.",
+    "Tafsir must never be silently rewritten as direct Quran wording.",
+    "Hadith authenticity or grading must never be invented by the model.",
+    "Generated answers are never source evidence.",
+    "No candidate source becomes active while rights_status is unknown or evidence_required.",
+    "Disagreement between accepted scholarly sources must be preserved rather than silently merged.",
+    "Every derived claim must resolve to one or more evidence records.",
+    "Question-specific manual answer injection is prohibited as a retrieval strategy."
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "qrag_source_record_v1",
+  "title": "QRAG Phase 1 Source Record",
+  "type": "object",
+  "required": [
+    "source_id",
+    "source_family",
+    "epistemic_layer",
+    "title",
+    "tradition_scope",
+    "acquisition_status",
+    "rights_status",
+    "acceptance_status",
+    "required_checks"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "source_family": {
+      "type": "string",
+      "enum": [
+        "quran",
+        "translation",
+        "tafsir",
+        "hadith",
+        "derived_claim",
+        "generated_answer"
+      ]
+    },
+    "epistemic_layer": {
+      "type": "string",
+      "enum": [
+        "quran_canonical_text",
+        "translation",
+        "tafsir",
+        "hadith",
+        "derived_claim",
+        "generated_answer"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "creator_or_scholar": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tradition_scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "repository_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "acquisition_status": {
+      "type": "string",
+      "enum": [
+        "present_in_repository",
+        "not_acquired",
+        "acquired_unverified",
+        "verified_snapshot"
+      ]
+    },
+    "rights_status": {
+      "type": "string",
+      "enum": [
+        "unknown",
+        "evidence_required",
+        "verified_allowed",
+        "restricted",
+        "prohibited"
+      ]
+    },
+    "acceptance_status": {
+      "type": "string",
+      "enum": [
+        "candidate",
+        "candidate_external",
+        "quarantined",
+        "accepted",
+        "rejected",
+        "superseded"
+      ]
+    },
+    "required_checks": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "additionalProperties": false
+}
