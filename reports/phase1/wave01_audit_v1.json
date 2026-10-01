@@ -1,0 +1,47 @@
+{
+  "schema_version": "qrag_wave01_audit_v1",
+  "branch": "qrag-phase1",
+  "wave": "01",
+  "task_range": "001-100",
+  "task_count": 100,
+  "task_status_counts": {
+    "DONE": 100
+  },
+  "repository_scope": {
+    "writable_repository": "Shahbazi-Amir/quran-rag",
+    "read_only_reference_repository": "Shahbazi-Amir/RAG_finance",
+    "main_modified_by_wave": false
+  },
+  "verification": {
+    "foundation_unit_tests": {
+      "status": "PASS",
+      "passed": 4,
+      "failed": 0
+    },
+    "nb00_synthetic_restart_run_all": "PASS",
+    "nb01_synthetic_restart_run_all": "PASS_WITH_LIMITATIONS",
+    "real_project_local_restart_run_all": "PENDING_USER_LOCAL_EXECUTION"
+  },
+  "source_state": {
+    "candidate_count": 14,
+    "repository_backed_candidate_count": 3,
+    "external_candidate_count": 11,
+    "active_source_count": 0,
+    "rights_verified_count": 0,
+    "interpretation": "No candidate source has been activated by Wave 01."
+  },
+  "legacy_findings": [
+    "Legacy app uses question-specific manual query expansion and is not the target Phase 1 architecture.",
+    "Legacy processed quran_dataset_clean.json is not present in the tracked Git tree.",
+    "Legacy requirements.txt and .env.example were empty before Wave 01.",
+    "Legacy app package placeholder files and legacy tests were empty.",
+    "Legacy NB09 had three unexecuted code cells in the saved notebook."
+  ],
+  "hard_gate": {
+    "status": "PENDING_LOCAL_RUN_ALL",
+    "required_action": "Run NB00 then NB01 with Restart Kernel -> Run All on the real qrag-phase1 clone and provide the resulting acceptance outputs.",
+    "downstream_allowed_before_gate": false,
+    "next_notebook_after_gate": "notebooks/phase1/02_quran_canonical_inventory.ipynb"
+  },
+  "wave_decision": "WORK_COMPLETED_BUT_DOWNSTREAM_BLOCKED_PENDING_REAL_LOCAL_NOTEBOOK_EXECUTION"
+}
