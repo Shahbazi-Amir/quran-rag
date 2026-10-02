@@ -1,0 +1,32 @@
+{
+  "schema_version": "qrag_translation_source_evidence_v1",
+  "observed_on_utc": "2026-10-02",
+  "authority": "Tanzil Project",
+  "findings": [
+    {
+      "url": "https://tanzil.net/trans/",
+      "finding": "Tanzil lists Persian translations by Hossein Ansarian and Mohammad Mahdi Fooladvand in its translation repository."
+    },
+    {
+      "url": "https://tanzil.net/docs/adding_new_translations",
+      "finding": "Tanzil documents a 6236-line translation-file convention and requests source/publication/copyright-holder metadata for submitted translations."
+    },
+    {
+      "url": "https://tanzil.net/docs/FAQ",
+      "finding": "Tanzil makes translations downloadable but explicitly states that it cannot guarantee authenticity or accuracy of all translations."
+    },
+    {
+      "url": "https://tanzil.net/trans/log/fa.fooladvand",
+      "finding": "Tanzil exposes a change log for the Fooladvand translation, showing that the hosted digital text has had revisions."
+    },
+    {
+      "url": "https://tanzil.net/trans/log/fa.ansarian/2",
+      "finding": "Tanzil exposes a change log for the Ansarian translation, showing that the hosted digital text has had revisions."
+    }
+  ],
+  "rights_interpretation": {
+    "status": "NOT_VERIFIED_FOR_PRODUCT_REPUBLICATION",
+    "reason": "The Quran-text CC BY license page covers Tanzil Quran Text. It does not by itself establish republication rights for every hosted translation.",
+    "action": "Keep translation artifacts quarantined/internal-research-only until source-specific rights evidence is verified."
+  }
+}

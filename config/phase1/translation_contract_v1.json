@@ -1,0 +1,37 @@
+{
+  "schema_version": "qrag_translation_contract_v1",
+  "canonical_quran_input": "data/phase1/processed/quran_canonical_v1.jsonl",
+  "expected_record_count": 6236,
+  "accepted_languages": [
+    "fa"
+  ],
+  "text_policy": {
+    "preserve_translation_text_verbatim": true,
+    "normalization_in_this_stage": false,
+    "translator_identity_required": true,
+    "verse_alignment_required": true,
+    "rights_evidence_required_for_active_product_corpus": true
+  },
+  "sources": [
+    {
+      "translation_id": "fa.fooladvand",
+      "source_id": "translation:fa:fooladvand:legacy-repo-v1",
+      "translator": "Mohammad Mahdi Fooladvand",
+      "raw_file": "data/raw/quran_fa_fooladvand.txt",
+      "discovery_source": "Tanzil Translations Repository",
+      "tanzil_translation_id": "fa.fooladvand",
+      "rights_status": "evidence_required",
+      "activation_policy": "quarantine_until_rights_verified"
+    },
+    {
+      "translation_id": "fa.ansarian",
+      "source_id": "translation:fa:ansarian:legacy-repo-v1",
+      "translator": "Hossein Ansarian",
+      "raw_file": "data/raw/quran_fa_ansarian.txt",
+      "discovery_source": "Tanzil Translations Repository",
+      "tanzil_translation_id": "fa.ansarian",
+      "rights_status": "evidence_required",
+      "activation_policy": "quarantine_until_rights_verified"
+    }
+  ]
+}

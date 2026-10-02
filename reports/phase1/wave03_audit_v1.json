@@ -1,0 +1,17 @@
+{
+  "schema_version": "qrag_wave03_audit_v1",
+  "wave": "03",
+  "task_range": "201-300",
+  "implementation_tasks_completed": 100,
+  "translation_candidates": [
+    "fa.fooladvand",
+    "fa.ansarian"
+  ],
+  "expected_alignment_count": 6236,
+  "rights_decision": "QUARANTINE_UNTIL_SOURCE_SPECIFIC_REPUBLICATION_RIGHTS_VERIFIED",
+  "tests": {
+    "translation_helper_synthetic": "PASS",
+    "real_repository_notebooks": "PENDING_USER_LOCAL_EXECUTION"
+  },
+  "next_wave": "04"
+}
