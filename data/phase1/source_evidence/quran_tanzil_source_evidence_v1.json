@@ -1,0 +1,47 @@
+{
+  "schema_version": "qrag_source_evidence_v1",
+  "source_id": "quran:uthmani:legacy-repo-v1",
+  "evidence_status": "SUFFICIENT_FOR_RESEARCH_RIGHTS_AND_PROVENANCE_WITH_LIMITATION",
+  "observed_on_utc": "2026-10-02",
+  "evidence": [
+    {
+      "role": "official_text_license",
+      "url": "https://tanzil.net/docs/Text_License",
+      "authority": "Tanzil Project",
+      "finding": "Tanzil Quran Text is licensed under Creative Commons Attribution 3.0. Verbatim copying/distribution is permitted; changing the Quran text is not allowed; source attribution and linking back to Tanzil are required."
+    },
+    {
+      "role": "official_download_page",
+      "url": "https://tanzil.net/download/?locale=fa_IR",
+      "authority": "Tanzil Project",
+      "finding": "The official download page identifies the latest Quran text release as version 1.1, published in February 2021, and repeats the verbatim-use and attribution requirements."
+    },
+    {
+      "role": "uthmani_text_description",
+      "url": "https://tanzil.net/docs/uthmani",
+      "authority": "Tanzil Project",
+      "finding": "Tanzil describes its Uthmani text as a Unicode encoding of the Medina Mushaf."
+    },
+    {
+      "role": "official_update_history",
+      "url": "https://tanzil.net/docs/text_updates",
+      "authority": "Tanzil Project",
+      "finding": "Tanzil documents text changes for version 1.1 and provides a maintained update history."
+    },
+    {
+      "role": "legacy_repository_lineage",
+      "repository_path": "notebooks/01_download_quran_data.ipynb",
+      "finding": "The legacy ingestion notebook explicitly records Tanzil as the Quran/translation source and identifies the local Arabic file as quran_arabic_uthmani.txt."
+    }
+  ],
+  "limitations": [
+    "The legacy notebook directed the user to the Tanzil download page for the Arabic file rather than programmatically preserving a remote file checksum.",
+    "Therefore the exact remote artifact fingerprint that produced the local raw file cannot yet be independently reconstructed from Git history alone.",
+    "NB02/NB03 must bind the local raw SHA-256, header metadata, 6236-verse structure and canonical verse numbering before activation."
+  ],
+  "rights_interpretation": {
+    "research_use": "allowed_with_required_attribution_if_text_is_kept_verbatim",
+    "modification_of_quran_text": "not_allowed",
+    "active_corpus_before_nb03": "not_allowed"
+  }
+}

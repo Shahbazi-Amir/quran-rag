@@ -1,0 +1,30 @@
+{
+  "schema_version": "qrag_wave02_audit_v1",
+  "wave": "02",
+  "task_range": "101-200",
+  "implementation_tasks_completed": 100,
+  "quran_contract": {
+    "expected_surahs": 114,
+    "expected_verses": 6236
+  },
+  "source_evidence": {
+    "authority": "Tanzil Project official documentation",
+    "rights_status": "verified_allowed_for_verbatim_attributed_use",
+    "historical_remote_checksum": "NOT_PRESERVED_IN_LEGACY_HISTORY"
+  },
+  "notebooks": [
+    {
+      "path": "notebooks/phase1/02_quran_canonical_inventory.ipynb",
+      "status": "PENDING_LOCAL_RUN_ALL"
+    },
+    {
+      "path": "notebooks/phase1/03_quran_canonical_ingestion_and_acceptance.ipynb",
+      "status": "PENDING_LOCAL_RUN_ALL"
+    }
+  ],
+  "test_status": {
+    "module_synthetic_test": "PASS_IN_ASSISTANT_PYTHON_SANDBOX",
+    "real_repository_notebooks": "PENDING_USER_LOCAL_EXECUTION"
+  },
+  "next_wave": "03"
+}

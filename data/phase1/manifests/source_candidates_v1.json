@@ -12,7 +12,7 @@
       "tradition_scope": "canonical_quran",
       "repository_path": "data/raw/quran_arabic_uthmani.txt",
       "acquisition_status": "present_in_repository",
-      "rights_status": "evidence_required",
+      "rights_status": "verified_allowed",
       "acceptance_status": "candidate",
       "required_checks": [
         "source_provenance",
@@ -20,7 +20,7 @@
         "verse_count_and_numbering",
         "text_integrity",
         "hash_freeze",
-        "rights_or_allowed_use"
+        "source_evidence_binding"
       ]
     },
     {
@@ -281,5 +281,10 @@
         "rights_or_allowed_use"
       ]
     }
+  ],
+  "last_updated_by_wave": "02",
+  "notes": [
+    "The Quran text candidate has verified Tanzil text-license evidence.",
+    "Source identity and raw-file structural acceptance remain subject to NB02/NB03 local execution."
   ]
 }
