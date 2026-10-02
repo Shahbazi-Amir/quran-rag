@@ -1,0 +1,28 @@
+{
+  "schema_version": "qrag_tafsir_source_manifest_v1",
+  "tafsir_id": "REPLACE_ME",
+  "title": "REPLACE_ME",
+  "author": "REPLACE_ME",
+  "edition": {
+    "edition_id": "REPLACE_ME",
+    "language": "fa_or_ar",
+    "volume_count": null,
+    "publisher": null,
+    "publication_year": null
+  },
+  "rights": {
+    "status": "evidence_required",
+    "evidence_urls": [],
+    "allowed_use": null
+  },
+  "acquisition": {
+    "source_url": null,
+    "acquired_at_utc": null,
+    "raw_files": []
+  },
+  "extraction": {
+    "format": "structured_jsonl",
+    "expected_output": "records.jsonl",
+    "locator_contract": "edition/volume/page-or-section/surah/verse-scope"
+  }
+}

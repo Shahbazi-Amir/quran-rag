@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "qrag_tafsir_record_v1",
+  "title": "QRAG Tafsir Structured Record",
+  "type": "object",
+  "required": [
+    "tafsir_record_id",
+    "tafsir_id",
+    "text",
+    "source_locator",
+    "surah",
+    "verse_start",
+    "verse_end",
+    "edition_id"
+  ],
+  "properties": {
+    "tafsir_record_id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "tafsir_id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "surah": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 114
+    },
+    "verse_start": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "verse_end": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "edition_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "volume": {
+      "type": [
+        "integer",
+        "string",
+        "null"
+      ]
+    },
+    "page": {
+      "type": [
+        "integer",
+        "string",
+        "null"
+      ]
+    },
+    "section": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "language": {
+      "type": "string"
+    },
+    "raw_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}
