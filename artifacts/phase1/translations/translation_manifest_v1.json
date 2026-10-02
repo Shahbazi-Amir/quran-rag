@@ -1,0 +1,25 @@
+{
+  "activation_blocker": "SOURCE_SPECIFIC_REPUBLICATION_RIGHTS_NOT_VERIFIED",
+  "active_translation_count": 0,
+  "artifacts": {
+    "fa.ansarian": {
+      "path": "data/phase1/processed/translations/fa.ansarian_v1.jsonl",
+      "record_count": 6236,
+      "rights_status": "evidence_required",
+      "sha256": "c14f706183acdf5d1741180565dda578f09a1a187b39779407abff288d002ba8",
+      "source_id": "translation:fa:ansarian:legacy-repo-v1",
+      "usage_scope": "INTERNAL_RESEARCH_QUARANTINE"
+    },
+    "fa.fooladvand": {
+      "path": "data/phase1/processed/translations/fa.fooladvand_v1.jsonl",
+      "record_count": 6236,
+      "rights_status": "evidence_required",
+      "sha256": "fc6e0765f06b3c05f047772454e5539e28f3b6a8c4b01c932018ee4eb52228e5",
+      "source_id": "translation:fa:fooladvand:legacy-repo-v1",
+      "usage_scope": "INTERNAL_RESEARCH_QUARANTINE"
+    }
+  },
+  "release_id": "qrag_phase1_translation_research_v1",
+  "schema_version": "qrag_translation_artifact_manifest_v1",
+  "status": "RESEARCH_ARTIFACTS_QUARANTINED"
+}

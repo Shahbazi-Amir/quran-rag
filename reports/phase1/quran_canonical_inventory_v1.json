@@ -1,0 +1,38 @@
+{
+  "header_signals": {
+    "header_count": 28,
+    "mentions_license": true,
+    "mentions_tanzil": true
+  },
+  "limitations": [
+    "The legacy notebook directed the user to the Tanzil download page for the Arabic file rather than programmatically preserving a remote file checksum.",
+    "Therefore the exact remote artifact fingerprint that produced the local raw file cannot yet be independently reconstructed from Git history alone.",
+    "NB02/NB03 must bind the local raw SHA-256, header metadata, 6236-verse structure and canonical verse numbering before activation."
+  ],
+  "raw_path": "data/raw/quran_arabic_uthmani.txt",
+  "raw_sha256": "bf4f57b968d03f4131c070b1e285da9be0e0a108a21c910e872801ca273312c8",
+  "raw_size_bytes": 1370878,
+  "schema_version": "qrag_quran_inventory_v1",
+  "source_evidence_status": "SUFFICIENT_FOR_RESEARCH_RIGHTS_AND_PROVENANCE_WITH_LIMITATION",
+  "source_id": "quran:uthmani:legacy-repo-v1",
+  "validation": {
+    "actual_record_count": 6236,
+    "checks": {
+      "duplicate_keys_zero": true,
+      "empty_text_zero": true,
+      "keys_exact_match": true,
+      "missing_keys_zero": true,
+      "per_surah_counts_match": true,
+      "record_count_matches": true,
+      "surah_count_114": true,
+      "unexpected_keys_zero": true
+    },
+    "duplicate_keys": [],
+    "empty_text": [],
+    "expected_record_count": 6236,
+    "missing_keys": [],
+    "per_surah_mismatch": {},
+    "status": "PASS",
+    "unexpected_keys": []
+  }
+}

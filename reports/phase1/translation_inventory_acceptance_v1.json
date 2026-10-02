@@ -1,0 +1,12 @@
+{
+  "acceptance_status": "PASS_WITH_LIMITATIONS",
+  "active_translation_count": 0,
+  "failed_checks": [],
+  "next_notebook": "notebooks/phase1/05_translation_ingestion_and_acceptance.ipynb",
+  "objective_status": "ACHIEVED",
+  "schema_version": "qrag_nb04_acceptance_v1",
+  "structurally_valid_translation_count": 2,
+  "warnings": [
+    "TRANSLATION_PRODUCT_RIGHTS_NOT_VERIFIED"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "acceptance_status": "PASS_WITH_LIMITATIONS",
+  "accepted_source_count": 0,
+  "candidate_count": 14,
+  "candidate_manifest_path": "data/phase1/manifests/source_candidates_v1.json",
+  "candidate_manifest_sha256": "b0ffa525b047277e71322571b7711b8593dd954bb851cdaf0bf844ea199637e2",
+  "external_candidate_count": 11,
+  "failed_checks": [],
+  "next_notebook": "notebooks/phase1/02_quran_canonical_inventory.ipynb",
+  "objective_status": "ACHIEVED",
+  "policy_decision": "Policy accepted. Candidate sources remain non-active until source-specific inventory and acceptance notebooks.",
+  "policy_path": "config/phase1/source_authority_policy_v1.json",
+  "policy_sha256": "d2270bea6c97c0ea30a628c51db5b0cdb7377391a163831a6f14d13808803373",
+  "repository_backed_candidate_count": 3,
+  "rights_unverified_count": 13,
+  "schema_path": "schemas/phase1/source_record.schema.json",
+  "schema_sha256": "652c1295ddcfcd0274a95c5bea3c47be1dc64c2ebc2cf9de0c4ccb1798a079f5",
+  "schema_version": "qrag_nb01_acceptance_v1",
+  "warnings": [
+    "EXTERNAL_CANDIDATES_REQUIRE_ACQUISITION:11",
+    "SOURCES_REQUIRE_RIGHTS_EVIDENCE:13"
+  ]
+}

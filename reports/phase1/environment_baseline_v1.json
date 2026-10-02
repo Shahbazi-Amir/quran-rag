@@ -1,0 +1,212 @@
+{
+  "data_inventory": {
+    "legacy_embeddings": {
+      "exists": true,
+      "path": "data/embeddings/quran_embeddings.npy",
+      "sha256": "97c90fe383b2cbd083e9089457e978b473e9e3a358c8c4b3dcd8ae755eb0a058",
+      "size_bytes": 9578624
+    },
+    "legacy_processed_dataset": {
+      "exists": true,
+      "path": "data/processed/quran_dataset_clean.json",
+      "sha256": "9c52dd16f0babb4dbfc532a5ef0018c36ad33d0a4604f18635bcbe84443520a6",
+      "size_bytes": 10514688
+    },
+    "quran_arabic_uthmani": {
+      "exists": true,
+      "path": "data/raw/quran_arabic_uthmani.txt",
+      "sha256": "bf4f57b968d03f4131c070b1e285da9be0e0a108a21c910e872801ca273312c8",
+      "size_bytes": 1370878
+    },
+    "translation_ansarian": {
+      "exists": true,
+      "path": "data/raw/quran_fa_ansarian.txt",
+      "sha256": "2926c77cac26de7541931aa7f63bd0e9f98ea4f0724735b251d15c929121cd70",
+      "size_bytes": 1648634
+    },
+    "translation_fooladvand": {
+      "exists": true,
+      "path": "data/raw/quran_fa_fooladvand.txt",
+      "sha256": "4d8cead0c9c7397e59adc4e773dd56b2da4c5700cda82d9ed648660fb190aa45",
+      "size_bytes": 1339156
+    }
+  },
+  "dependency_contract": {
+    "declared_requirement_count": 11,
+    "declared_requirements": [
+      "numpy",
+      "requests",
+      "sentence-transformers",
+      "torch",
+      "python-dotenv",
+      "openai",
+      "streamlit",
+      "nbformat",
+      "nbclient",
+      "ipykernel",
+      "jsonschema"
+    ],
+    "requirements_file_exists": true
+  },
+  "environment": {
+    "execution_time_utc": "2026-10-02T17:25:28.982676+00:00",
+    "machine": "x86_64",
+    "operating_system": "Darwin",
+    "os_release": "21.6.0",
+    "platform": "macOS-12.7.6-x86_64-i386-64bit",
+    "python_executable": "/usr/local/bin/python3",
+    "python_version": "3.11.3"
+  },
+  "environment_variable_presence": {
+    "ARVAN_AI_API_KEY": true,
+    "ARVAN_CHAT_MODEL": true,
+    "ARVAN_CHAT_URL": true
+  },
+  "git": {
+    "branch": "qrag-phase1",
+    "commit_sha": "aadfec32bd2b406ea109c7e0a22db6fc03e6850f",
+    "commit_short": "aadfec3",
+    "last_commit": "aadfec3 | 2026-10-02T17:24:59+03:30 | feat(wave05): add fail-closed tafsir ingestion framework",
+    "porcelain_status": [
+      "M notebooks/01_download_quran_data.ipynb",
+      " M notebooks/02_validate_quran_data.ipynb",
+      " M notebooks/03_clean_quran_data.ipynb",
+      " M notebooks/04_build_embeddings.ipynb",
+      " M notebooks/06_build_rag_pipeline.ipynb",
+      " M notebooks/07_package_rag_pipeline.ipynb",
+      " M notebooks/08_evaluate_rag_value.ipynb",
+      " M notebooks/09_build_streamlit_quran_rag_app.ipynb"
+    ],
+    "working_tree": "dirty"
+  },
+  "interpretation": {
+    "legacy_assets_are_accepted_phase1_sources": false,
+    "legacy_embeddings_are_frozen_reference_only": true,
+    "source_acceptance_requires_downstream_notebooks": true
+  },
+  "legacy_notebook_health": [
+    {
+      "cell_count": 9,
+      "code_cell_count": 7,
+      "error_outputs": 0,
+      "exists": true,
+      "markdown_cell_count": 2,
+      "notebook": "01_download_quran_data.ipynb",
+      "unexecuted_code_cells": 0
+    },
+    {
+      "cell_count": 10,
+      "code_cell_count": 5,
+      "error_outputs": 0,
+      "exists": true,
+      "markdown_cell_count": 5,
+      "notebook": "02_validate_quran_data.ipynb",
+      "unexecuted_code_cells": 0
+    },
+    {
+      "cell_count": 12,
+      "code_cell_count": 6,
+      "error_outputs": 0,
+      "exists": true,
+      "markdown_cell_count": 6,
+      "notebook": "03_clean_quran_data.ipynb",
+      "unexecuted_code_cells": 0
+    },
+    {
+      "cell_count": 15,
+      "code_cell_count": 8,
+      "error_outputs": 0,
+      "exists": true,
+      "markdown_cell_count": 7,
+      "notebook": "04_build_embeddings.ipynb",
+      "unexecuted_code_cells": 0
+    },
+    {
+      "cell_count": 12,
+      "code_cell_count": 5,
+      "error_outputs": 0,
+      "exists": true,
+      "markdown_cell_count": 7,
+      "notebook": "05_test_retrieval.ipynb",
+      "unexecuted_code_cells": 0
+    },
+    {
+      "cell_count": 20,
+      "code_cell_count": 10,
+      "error_outputs": 1,
+      "exists": true,
+      "markdown_cell_count": 10,
+      "notebook": "06_build_rag_pipeline.ipynb",
+      "unexecuted_code_cells": 2
+    },
+    {
+      "cell_count": 12,
+      "code_cell_count": 6,
+      "error_outputs": 1,
+      "exists": true,
+      "markdown_cell_count": 6,
+      "notebook": "07_package_rag_pipeline.ipynb",
+      "unexecuted_code_cells": 0
+    },
+    {
+      "cell_count": 21,
+      "code_cell_count": 8,
+      "error_outputs": 1,
+      "exists": true,
+      "markdown_cell_count": 13,
+      "notebook": "08_evaluate_rag_value.ipynb",
+      "unexecuted_code_cells": 1
+    },
+    {
+      "cell_count": 9,
+      "code_cell_count": 3,
+      "error_outputs": 0,
+      "exists": true,
+      "markdown_cell_count": 6,
+      "notebook": "09_build_streamlit_quran_rag_app.ipynb",
+      "unexecuted_code_cells": 0
+    }
+  ],
+  "notebook": "notebooks/phase1/00_environment_and_baseline.ipynb",
+  "phase": "qrag-phase1",
+  "repository_inventory": {
+    "key_files": {
+      ".env.example": {
+        "exists": true,
+        "size_bytes": 94
+      },
+      "app.py": {
+        "exists": true,
+        "size_bytes": 29543
+      },
+      "data/embeddings/quran_embeddings.npy": {
+        "exists": true,
+        "size_bytes": 9578624
+      },
+      "data/raw/quran_arabic_uthmani.txt": {
+        "exists": true,
+        "size_bytes": 1370878
+      },
+      "data/raw/quran_fa_ansarian.txt": {
+        "exists": true,
+        "size_bytes": 1648634
+      },
+      "data/raw/quran_fa_fooladvand.txt": {
+        "exists": true,
+        "size_bytes": 1339156
+      },
+      "requirements.txt": {
+        "exists": true,
+        "size_bytes": 226
+      }
+    },
+    "required_paths": {
+      ".git": true,
+      "data": true,
+      "docs/phase1": true,
+      "notebooks": true
+    },
+    "required_paths_ok": true
+  },
+  "schema_version": "qrag_environment_baseline_v1"
+}

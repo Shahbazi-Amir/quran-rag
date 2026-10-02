@@ -1,0 +1,12 @@
+{
+  "acceptance_status": "PASS_WITH_LIMITATIONS",
+  "active_translation_count": 0,
+  "artifact_translation_count": 2,
+  "failed_checks": [],
+  "next_notebook": "notebooks/phase1/06_tafsir_inventory.ipynb",
+  "objective_status": "ACHIEVED",
+  "schema_version": "qrag_nb05_acceptance_v1",
+  "warnings": [
+    "TRANSLATIONS_ARE_QUARANTINED_INTERNAL_RESEARCH_ARTIFACTS"
+  ]
+}

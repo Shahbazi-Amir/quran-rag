@@ -1,0 +1,13 @@
+{
+  "acceptance_status": "PASS_WITH_LIMITATIONS",
+  "baseline_report": "reports/phase1/environment_baseline_v1.json",
+  "baseline_report_sha256": "990a3421534220bf25b7881e68b1988c52997eedcd2a947efda4822048420e97",
+  "failed_checks": [],
+  "next_notebook": "notebooks/phase1/01_source_policy_rights_and_authority.ipynb",
+  "objective_status": "ACHIEVED",
+  "schema_version": "qrag_nb00_acceptance_v1",
+  "warnings": [
+    "LEGACY_UNEXECUTED_CODE_CELLS:3",
+    "LEGACY_ERROR_OUTPUTS:3"
+  ]
+}

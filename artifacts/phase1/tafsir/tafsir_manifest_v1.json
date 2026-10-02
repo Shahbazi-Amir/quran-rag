@@ -1,0 +1,28 @@
+{
+  "accepted_artifact_count": 0,
+  "artifacts": [],
+  "blocked": [
+    {
+      "reason": "SOURCE_PACKAGE_MISSING",
+      "tafsir_id": "tafsir:al-mizan"
+    },
+    {
+      "reason": "SOURCE_PACKAGE_MISSING",
+      "tafsir_id": "tafsir:tasnim"
+    },
+    {
+      "reason": "SOURCE_PACKAGE_MISSING",
+      "tafsir_id": "tafsir:nemuneh"
+    },
+    {
+      "reason": "SOURCE_PACKAGE_MISSING",
+      "tafsir_id": "tafsir:nur-al-thaqalayn"
+    },
+    {
+      "reason": "SOURCE_PACKAGE_MISSING",
+      "tafsir_id": "tafsir:al-burhan"
+    }
+  ],
+  "schema_version": "qrag_tafsir_artifact_manifest_v1",
+  "status": "BLOCKED_SOURCE_ACQUISITION"
+}

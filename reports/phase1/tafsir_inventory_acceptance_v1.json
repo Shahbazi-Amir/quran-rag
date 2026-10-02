@@ -1,0 +1,53 @@
+{
+  "acceptance_status": "PASS_WITH_LIMITATIONS",
+  "blocked_sources": [
+    {
+      "acquisition_status": "target_persian_or_arabic_edition_not_acquired",
+      "has_candidate_source": true,
+      "rights_verified": false,
+      "tafsir_id": "tafsir:al-mizan",
+      "verified_snapshot": false
+    },
+    {
+      "acquisition_status": "authoritative_machine_readable_source_not_verified",
+      "has_candidate_source": false,
+      "rights_verified": false,
+      "tafsir_id": "tafsir:tasnim",
+      "verified_snapshot": false
+    },
+    {
+      "acquisition_status": "authoritative_machine_readable_source_not_verified",
+      "has_candidate_source": false,
+      "rights_verified": false,
+      "tafsir_id": "tafsir:nemuneh",
+      "verified_snapshot": false
+    },
+    {
+      "acquisition_status": "candidate_sources_discovered_not_acquired",
+      "has_candidate_source": true,
+      "rights_verified": false,
+      "tafsir_id": "tafsir:nur-al-thaqalayn",
+      "verified_snapshot": false
+    },
+    {
+      "acquisition_status": "candidate_sources_discovered_not_acquired",
+      "has_candidate_source": true,
+      "rights_verified": false,
+      "tafsir_id": "tafsir:al-burhan",
+      "verified_snapshot": false
+    }
+  ],
+  "candidate_tafsir_count": 5,
+  "failed_checks": [],
+  "global_blockers": [
+    "tasnim_machine_readable_authoritative_source_not_verified",
+    "nemuneh_machine_readable_authoritative_source_not_verified",
+    "persian_or_arabic_al_mizan_target_edition_not_acquired",
+    "rights_evidence_not_verified_for_any_tafsir_candidate"
+  ],
+  "ingestion_ready_count": 0,
+  "next_notebook": "notebooks/phase1/07_tafsir_ingestion_and_acceptance.ipynb",
+  "next_notebook_execution_mode": "FRAMEWORK_AND_PREFLIGHT_ONLY_UNTIL_SOURCES_ACQUIRED",
+  "objective_status": "ACHIEVED",
+  "schema_version": "qrag_nb06_acceptance_v1"
+}

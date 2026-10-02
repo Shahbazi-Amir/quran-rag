@@ -1,0 +1,15 @@
+{
+  "canonical_path": "data/phase1/processed/quran_canonical_v1.jsonl",
+  "canonical_sha256": "12b25d029e071b3d1ee700b8176159a63498b0037777e53fe0031fddb658b973",
+  "first_verse_id": "quran:1:1",
+  "known_limitation": "Historical remote-download checksum was not preserved in the legacy ingestion; local raw SHA-256 is frozen here.",
+  "last_verse_id": "quran:114:6",
+  "raw_path": "data/raw/quran_arabic_uthmani.txt",
+  "raw_sha256": "bf4f57b968d03f4131c070b1e285da9be0e0a108a21c910e872801ca273312c8",
+  "record_count": 6236,
+  "release_id": "qrag_phase1_quran_canonical_v1",
+  "schema_version": "qrag_quran_canonical_manifest_v1",
+  "source_id": "quran:uthmani:legacy-repo-v1",
+  "status": "ACCEPTED_FOR_QRAG_PHASE1_RESEARCH",
+  "text_transformation": "NONE_VERBATIM_COPY_TO_STRUCTURED_RECORD"
+}

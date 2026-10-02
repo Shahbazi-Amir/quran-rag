@@ -1,0 +1,52 @@
+{
+  "rights_status": "BLOCKED_PENDING_SOURCE_SPECIFIC_EVIDENCE",
+  "schema_version": "qrag_translation_inventory_v1",
+  "structural_status": "PASS",
+  "translation_count": 2,
+  "translations": [
+    {
+      "activation_policy": "quarantine_until_rights_verified",
+      "alignment": {
+        "checks": {
+          "empty_translation_text_zero": true,
+          "record_count_equal": true,
+          "verse_keys_exact_match": true
+        },
+        "empty_text": [],
+        "quran_count": 6236,
+        "status": "PASS",
+        "translation_count": 6236
+      },
+      "raw_file": "data/raw/quran_fa_fooladvand.txt",
+      "raw_sha256": "4d8cead0c9c7397e59adc4e773dd56b2da4c5700cda82d9ed648660fb190aa45",
+      "raw_size_bytes": 1339156,
+      "record_count": 6236,
+      "rights_status": "evidence_required",
+      "source_id": "translation:fa:fooladvand:legacy-repo-v1",
+      "translation_id": "fa.fooladvand",
+      "translator": "Mohammad Mahdi Fooladvand"
+    },
+    {
+      "activation_policy": "quarantine_until_rights_verified",
+      "alignment": {
+        "checks": {
+          "empty_translation_text_zero": true,
+          "record_count_equal": true,
+          "verse_keys_exact_match": true
+        },
+        "empty_text": [],
+        "quran_count": 6236,
+        "status": "PASS",
+        "translation_count": 6236
+      },
+      "raw_file": "data/raw/quran_fa_ansarian.txt",
+      "raw_sha256": "2926c77cac26de7541931aa7f63bd0e9f98ea4f0724735b251d15c929121cd70",
+      "raw_size_bytes": 1648634,
+      "record_count": 6236,
+      "rights_status": "evidence_required",
+      "source_id": "translation:fa:ansarian:legacy-repo-v1",
+      "translation_id": "fa.ansarian",
+      "translator": "Hossein Ansarian"
+    }
+  ]
+}

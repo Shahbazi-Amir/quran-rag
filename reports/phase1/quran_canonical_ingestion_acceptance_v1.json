@@ -1,0 +1,10 @@
+{
+  "acceptance_status": "PASS_WITH_LIMITATIONS",
+  "active_quran_source_id": "quran:uthmani:legacy-repo-v1",
+  "canonical_sha256": "12b25d029e071b3d1ee700b8176159a63498b0037777e53fe0031fddb658b973",
+  "failed_checks": [],
+  "next_notebook": "notebooks/phase1/04_translation_inventory.ipynb",
+  "objective_status": "ACHIEVED",
+  "record_count": 6236,
+  "schema_version": "qrag_nb03_acceptance_v1"
+}
