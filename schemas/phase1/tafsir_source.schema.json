@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "qrag_tafsir_source_v1",
+  "title": "QRAG Tafsir Source Record",
+  "type": "object",
+  "required": [
+    "tafsir_id",
+    "title",
+    "author",
+    "tradition_scope",
+    "tafsir_method",
+    "target_languages",
+    "candidate_sources",
+    "rights_status",
+    "acquisition_status",
+    "locator_requirements",
+    "acceptance_status"
+  ],
+  "properties": {
+    "tafsir_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "tradition_scope": {
+      "type": "string"
+    },
+    "tafsir_method": {
+      "type": "string"
+    },
+    "target_languages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "candidate_sources": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "rights_status": {
+      "type": "string"
+    },
+    "acquisition_status": {
+      "type": "string"
+    },
+    "locator_requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "acceptance_status": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

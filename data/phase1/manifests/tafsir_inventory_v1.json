@@ -1,0 +1,162 @@
+{
+  "schema_version": "qrag_tafsir_inventory_v1",
+  "observed_on_utc": "2026-10-02",
+  "inventory_status": "CANDIDATE_DISCOVERY_ONLY",
+  "priority_rule": "Shia tafsir sources are prioritized, but no work is accepted merely because of tradition or reputation.",
+  "target_language_priority": [
+    "fa",
+    "ar"
+  ],
+  "sources": [
+    {
+      "tafsir_id": "tafsir:al-mizan",
+      "title": "Al-Mizan fi Tafsir al-Quran",
+      "author": "Sayyid Muhammad Husayn Tabataba'i",
+      "tradition_scope": "shia_priority",
+      "tafsir_method": "analytical_quran_by_quran_with_extended_discussion",
+      "target_languages": [
+        "fa",
+        "ar"
+      ],
+      "candidate_sources": [
+        {
+          "url": "https://al-islam.org/al-mizan-exegesis-quran-volume-1-sayyid-muhammad-husayn-tabatabai",
+          "role": "secondary_digitized_english_translation",
+          "status": "verified_discovery_not_target_language",
+          "note": "Al-Islam documents author, publisher/translator and warns that its digitized text includes editorial changes and diverges from the printed volume."
+        }
+      ],
+      "rights_status": "evidence_required",
+      "acquisition_status": "target_persian_or_arabic_edition_not_acquired",
+      "locator_requirements": [
+        "edition_id",
+        "volume",
+        "surah",
+        "verse_scope",
+        "section",
+        "stable_locator"
+      ],
+      "acceptance_status": "candidate_external"
+    },
+    {
+      "tafsir_id": "tafsir:tasnim",
+      "title": "Tafsir Tasnim",
+      "author": "Abdollah Javadi Amoli",
+      "tradition_scope": "shia_priority",
+      "tafsir_method": "analytical_contemporary_shia_tafsir",
+      "target_languages": [
+        "fa"
+      ],
+      "candidate_sources": [],
+      "rights_status": "evidence_required",
+      "acquisition_status": "authoritative_machine_readable_source_not_verified",
+      "locator_requirements": [
+        "edition_id",
+        "volume",
+        "surah",
+        "verse_scope",
+        "section",
+        "stable_locator"
+      ],
+      "acceptance_status": "candidate_external"
+    },
+    {
+      "tafsir_id": "tafsir:nemuneh",
+      "title": "Tafsir Nemuneh",
+      "author": "Naser Makarem Shirazi and collaborators",
+      "tradition_scope": "shia_priority",
+      "tafsir_method": "contemporary_expository_tafsir",
+      "target_languages": [
+        "fa"
+      ],
+      "candidate_sources": [],
+      "rights_status": "evidence_required",
+      "acquisition_status": "authoritative_machine_readable_source_not_verified",
+      "locator_requirements": [
+        "edition_id",
+        "volume",
+        "surah",
+        "verse_scope",
+        "section",
+        "stable_locator"
+      ],
+      "acceptance_status": "candidate_external"
+    },
+    {
+      "tafsir_id": "tafsir:nur-al-thaqalayn",
+      "title": "Tafsir Nur al-Thaqalayn",
+      "author": "Abd Ali ibn Jum'a al-Huwayzi",
+      "tradition_scope": "shia_riwayi_priority",
+      "tafsir_method": "riwayi_narrative_tafsir",
+      "target_languages": [
+        "ar"
+      ],
+      "candidate_sources": [
+        {
+          "url": "https://usul.ai/ar/t/tafsir-nur-thaqalayn",
+          "role": "searchable_digitized_candidate",
+          "status": "verified_discovery_rights_not_verified",
+          "note": "Usul.ai identifies the work, author, editor, edition and publication year."
+        },
+        {
+          "url": "https://lib.rafed.net/view.php?b_id=3049&type=c_fbook",
+          "role": "searchable_digitized_candidate",
+          "status": "verified_discovery_rights_not_verified",
+          "note": "Rafed exposes volume metadata and searchable text."
+        },
+        {
+          "url": "https://sites.dlib.nyu.edu/viewer/books/columbia_aco002381/1?embed=1&lang=ar",
+          "role": "scan_candidate",
+          "status": "verified_discovery_scanned_edition",
+          "note": "Arabic Collections Online exposes bibliographic metadata and scanned PDF/IIIF for a 1963-1965 edition."
+        }
+      ],
+      "rights_status": "evidence_required",
+      "acquisition_status": "candidate_sources_discovered_not_acquired",
+      "locator_requirements": [
+        "edition_id",
+        "volume",
+        "page",
+        "surah",
+        "verse_scope",
+        "stable_locator"
+      ],
+      "acceptance_status": "candidate_external"
+    },
+    {
+      "tafsir_id": "tafsir:al-burhan",
+      "title": "Al-Burhan fi Tafsir al-Quran",
+      "author": "Hashim al-Bahrani",
+      "tradition_scope": "shia_riwayi_priority",
+      "tafsir_method": "riwayi_narrative_tafsir",
+      "target_languages": [
+        "ar"
+      ],
+      "candidate_sources": [
+        {
+          "url": "https://lib.rafed.net/view.php?b_id=1477&type=c_fbook",
+          "role": "searchable_digitized_candidate",
+          "status": "verified_discovery_rights_not_verified",
+          "note": "Rafed exposes the first volume and structured table of contents."
+        },
+        {
+          "url": "https://sites.dlib.nyu.edu/viewer/books/aub_aco001741/display?lang=ar",
+          "role": "scan_candidate",
+          "status": "verified_discovery_scanned_edition",
+          "note": "Arabic Collections Online exposes bibliographic metadata and a 1955 Tehran edition scan."
+        }
+      ],
+      "rights_status": "evidence_required",
+      "acquisition_status": "candidate_sources_discovered_not_acquired",
+      "locator_requirements": [
+        "edition_id",
+        "volume",
+        "page",
+        "surah",
+        "verse_scope",
+        "stable_locator"
+      ],
+      "acceptance_status": "candidate_external"
+    }
+  ]
+}

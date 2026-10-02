@@ -1,0 +1,40 @@
+{
+  "schema_version": "qrag_tafsir_acquisition_plan_v1",
+  "policy": "No tafsir text is crawled or copied into the active corpus until edition identity, rights/allowed use, extraction method and stable locator are documented.",
+  "phases": [
+    {
+      "order": 1,
+      "tafsir_ids": [
+        "tafsir:al-mizan",
+        "tafsir:tasnim",
+        "tafsir:nemuneh"
+      ],
+      "purpose": "Primary Persian analytical tafsir set requested by project owner."
+    },
+    {
+      "order": 2,
+      "tafsir_ids": [
+        "tafsir:nur-al-thaqalayn",
+        "tafsir:al-burhan"
+      ],
+      "purpose": "Riwayi tafsir layer for hadith-linked interpretation."
+    }
+  ],
+  "required_pre_ingestion_checks": [
+    "authoritative_or_defensible_source",
+    "edition_identity",
+    "language_and_translation_identity",
+    "rights_or_allowed_use",
+    "stable_page_or_section_locator",
+    "surah_verse_scope_mapping",
+    "raw_snapshot_hash",
+    "extraction_regression_fixture",
+    "manual_sample_review"
+  ],
+  "blockers": [
+    "tasnim_machine_readable_authoritative_source_not_verified",
+    "nemuneh_machine_readable_authoritative_source_not_verified",
+    "persian_or_arabic_al_mizan_target_edition_not_acquired",
+    "rights_evidence_not_verified_for_any_tafsir_candidate"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": "qrag_wave04_audit_v1",
+  "wave": "04",
+  "task_range": "301-400",
+  "implementation_tasks_completed": 100,
+  "candidate_tafsir_count": 5,
+  "ingestion_ready_count": 0,
+  "main_blockers": [
+    "tasnim_machine_readable_authoritative_source_not_verified",
+    "nemuneh_machine_readable_authoritative_source_not_verified",
+    "persian_or_arabic_al_mizan_target_edition_not_acquired",
+    "rights_evidence_not_verified_for_any_tafsir_candidate"
+  ],
+  "decision": "NO_CRAWL_OR_INGESTION_BEFORE_EDITION_RIGHTS_AND_LOCATOR_ACCEPTANCE",
+  "next_wave": "05"
+}
